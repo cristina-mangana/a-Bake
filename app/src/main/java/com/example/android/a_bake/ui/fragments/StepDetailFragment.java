@@ -58,7 +58,7 @@ public class StepDetailFragment extends Fragment {
     SimpleExoPlayerView mPlayerView;
     @BindView(R.id.step_image)
     ImageView mStepImage;
-    @BindView(R.id.step_title)
+    @BindView(R.id.step_title_detail)
     TextView mStepTitleTextView;
     @BindView(R.id.step_description)
     TextView mStepDescriptionTextView;
@@ -72,7 +72,7 @@ public class StepDetailFragment extends Fragment {
     /* true if ExoPlayer is playing, false if it's paused */
     private boolean mPlayWhenReady;
 
-    // Array to store the state of the ingredient checkboxes
+    /* Array to store the state of the ingredient checkboxes */
     public static boolean[] checkedIngredients;
 
     // Mandatory empty constructor
@@ -206,11 +206,22 @@ public class StepDetailFragment extends Fragment {
     // Fires when a configuration change occurs and activity needs to save state
     @Override
     public void onSaveInstanceState(@NonNull Bundle savedInstanceState) {
+        saveState();
         savedInstanceState.putLong(PLAYER_POSITION_KEY, mExoPlayerCurrentPosition);
         savedInstanceState.putInt(WINDOW_KEY, mCurrentWindowIndex);
         savedInstanceState.putBoolean(PLAY_WHEN_READY_KEY, mPlayWhenReady);
         savedInstanceState.putBooleanArray(CHECKED_KEY, checkedIngredients);
         super.onSaveInstanceState(savedInstanceState);
+    }
+
+    // Save the ExoPlayer current state
+    private void saveState() {
+        if (mExoPlayer != null) {
+            // Get the current position
+            mExoPlayerCurrentPosition = mExoPlayer.getCurrentPosition();
+            mCurrentWindowIndex = mExoPlayer.getCurrentWindowIndex();
+            mPlayWhenReady = mExoPlayer.getPlayWhenReady();
+        }
     }
 
     /**
@@ -259,9 +270,7 @@ public class StepDetailFragment extends Fragment {
     private void releasePlayer() {
         if (mExoPlayer != null) {
             // Get the current position
-            mExoPlayerCurrentPosition = mExoPlayer.getCurrentPosition();
-            mCurrentWindowIndex = mExoPlayer.getCurrentWindowIndex();
-            mPlayWhenReady = mExoPlayer.getPlayWhenReady();
+            saveState();
             mExoPlayer.stop();
             mExoPlayer.release();
             mExoPlayer = null;
