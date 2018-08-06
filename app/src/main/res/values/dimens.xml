@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tinyPadding">4dp</dimen>
+    <dimen name="smallPadding">8dp</dimen>
+    <dimen name="marginNormal">16dp</dimen>
+    <dimen name="marginBig">20dp</dimen>
+
+    <dimen name="cardCornerRadius">16dp</dimen>
+    <dimen name="circleDividerSize">4dp</dimen>
+    <dimen name="videoHeight">220dp</dimen>
+
+    <dimen name="widget_margin">8dp</dimen>
+
+    <dimen name="list_textSize">16sp</dimen>
+    <dimen name="list_small_textSize">14sp</dimen>
+    <dimen name="label_textSize">26sp</dimen>
+</resources>

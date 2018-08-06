@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/smallPadding">
+
+    <TextView
+        android:id="@+id/ingredient_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/list_small_textSize"
+        android:textStyle="italic"
+        tools:text="@string/ingredient_quantity_placeholder" />
+
+    <TextView
+        android:id="@+id/ingredient_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/tinyPadding"
+        android:layout_marginStart="@dimen/tinyPadding"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:textColor="@color/secondaryDarkText"
+        android:textSize="@dimen/list_textSize"
+        tools:text="@string/ingredient_placeholder" />
+
+    <CheckBox
+        android:id="@+id/ingredient_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

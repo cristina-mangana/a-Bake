@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Style for the tab layout view in the step_detail activity -->
+    <style name="visibility_style">
+        <item name="android:visibility">gone</item>
+    </style>
+</resources>

@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="CircleDividerStyle">
+        <item name="android:layout_width">@dimen/circleDividerSize</item>
+        <item name="android:layout_height">@dimen/circleDividerSize</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_margin">@dimen/marginNormal</item>
+        <item name="android:background">@drawable/circle_divider</item>
+    </style>
+
+    <!-- Style for the image/video view in the step_detail activity -->
+    <style name="step_detail_media_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/videoHeight</item>
+    </style>
+
+    <!-- Style for the tab layout and the toolbar in the step_detail activity -->
+    <style name="visibility_style">
+        <item name="android:visibility">visible</item>
+    </style>
+</resources>

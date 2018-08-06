@@ -1,0 +1,52 @@
+<resources>
+    <!-- App Name-->
+    <string name="app_name" translatable="false">a-Bake!</string>
+
+    <!-- Error text [CHAR LIMIT = NONE]-->
+    <string name="error">Oops! It seems that an error has occurred. Please check your Internet
+    connection and come back in a while</string>
+
+    <!-- PLACEHOLDERS -->
+    <!-- Cake name placeholder -->
+    <string name="cake_name_placeholder" translatable="false">Pancakes</string>
+    <!-- Number of servings placeholder -->
+    <string name="servings_placeholder" translatable="false">8</string>
+    <!-- Ingredient quantity placeholder -->
+    <string name="ingredient_quantity_placeholder" translatable="false">2CUPs</string>
+    <!-- Ingredient name placeholder -->
+    <string name="ingredient_placeholder" translatable="false">Nutella</string>
+    <!-- Description placeholder -->
+    <string name="description_placeholder" translatable="false">Preheat the oven until it reaches
+        220ºC</string>
+
+    <!-- CONTENT DESCRIPTION -->
+    <!-- Cake main image content description [CHAR LIMIT = NONE]-->
+    <string name="cake_image_ct">Cake image</string>
+    <!-- Step image content description [CHAR LIMIT = NONE]-->
+    <string name="step_image_ct">Image showing the step</string>
+
+    <!-- LABELS -->
+    <!-- Steps list label [CHAR LIMIT = 20]-->
+    <string name="step_list_label">How to:</string>
+    <!-- Ingredients label [CHAR LIMIT = 30]-->
+    <string name="ingredients_label">Ingredients</string>
+    <!-- Steps list label [CHAR LIMIT = 20]-->
+    <string name="ingredients_detail_label">What you need:</string>
+    <!-- Steps label [CHAR LIMIT = 20]-->
+    <string name="step_label">Step</string>
+
+    <!-- WIDGET STRINGS -->
+    <string name="add_widget">Add widget</string>
+    <string name="configure">Select the desired recipe:</string>
+    <string name="appwidget_text">Recipe</string>
+    <string name="widget_empty_text">The list of ingredients is empty</string>
+
+    <!--ACTION BUTTON TITLES-->
+    <string name="action_share">Share</string>
+
+    <!--Text for sharing [CHAR LIMIT = NONE]-->
+    <string name="shared_text">Check this recipe in
+        <xliff.g example="a-Bake!" id="app_name">%s</xliff.g>:
+        <xliff.g example="Pancakes" id="recipe name">%s</xliff.g></string>
+
+</resources>
